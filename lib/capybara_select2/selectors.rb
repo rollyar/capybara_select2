@@ -17,8 +17,9 @@ module CapybaraSelect2
       '2' => ".select2-dropdown-open input.select2-focused",
       '3' => ".select2-drop-active input.select2-input," +          # single
              ".select2-dropdown-open input.select2-input",          # multi
-      '4' => ".select2-container--open input.select2-search__field"
-    }.freeze
+      '4' => ".select2-container--open input.select2-search__field," +
+             ".select2-container--open textarea.select2-search__field"
+    }.freeze   
 
     def search_input_selector(select2_version)
       SearchInputSelectors.fetch(select2_version)
